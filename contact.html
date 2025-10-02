@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Preethi Clinical Laboratory – Contact Us</title>
+  <style>
+    /* Base page styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #eaf4ff;      /* very light blue */
+      color: #004085;           /* dark blue text */
+      line-height: 1.6;
+    }
+
+    /* Header with black background and red title */
+    header {
+      background: #000;         /* black */
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+    header h1 {
+      margin: 0;
+      color: #e63946;           /* red */
+    }
+    header p {
+      margin: 8px 0 0;
+      font-size: 1.1em;
+    }
+
+    /* Main container */
+    main {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+
+    /* Section headings */
+    h2 {
+      color: #0056b3;           /* medium blue */
+      margin-top: 0;
+    }
+
+    /* Contact info styling */
+    .contact-info p {
+      margin: 8px 0;
+    }
+
+    /* Map container with blue border */
+    .map-container {
+      width: 100%;
+      height: 250px;
+      border: 2px solid #0056b3; /* medium blue */
+      margin: 20px 0;
+    }
+
+    /* Form styling */
+    .contact-form {
+      background: #fff;         /* white */
+      padding: 20px;
+      border: 2px solid #0056b3; /* medium blue */
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .contact-form label {
+      display: block;
+      margin: 12px 0 6px;
+      color: #004085;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #007bff; /* bright blue */
+      box-sizing: border-box;
+      font-size: 1em;
+      border-radius: 4px;
+    }
+    .contact-form button {
+      margin-top: 16px;
+      padding: 12px 20px;
+      background: #007bff;      /* bright blue */
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      font-size: 1em;
+      border-radius: 4px;
+    }
+    .contact-form button:hover {
+      background: #0056b3;      /* medium blue */
+    }
+
+    /* Footer styling */
+    footer {
+      background: #0056b3;      /* medium blue */
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      font-size: 0.9em;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Preethi Clinical Laboratory</h1>
+    <p>Contact Us</p>
+	<p>Your health is our priority</p>
+	<nav>
+      <a href="index.html">Home</a>
+	  <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-info">
+      <h2>Get in Touch</h2>
+      <p><strong>Address:</strong> SCR-1 1st floor, MMDA Colony Main Rd, opp. Arul Kumaran Textiles, MMDA Colony, Arumbakkam, Chennai, Tamil Nadu 600106</p>
+      <p><strong>Phone:</strong> +91-12345-67890</p>
+      <p><strong>Email:</strong> info@xyzdiagnostics.com</p>
+
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.204646352545!2d80.2332918147765!3d13.086791290731207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526746f165f171%3A0xa3a4d87e2ffb0aa5!2sPurasawalkam%2C%20Chennai%2C%20Tamil%20Nadu%20600008!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+    </section>
+
+    <section class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form action="#" method="post">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone">
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Preethi Clinical Laboratory. All rights reserved.</p>
+    <p>Designed with care in Chennai</p>
+  </footer>
+
+</body>
+</html>
