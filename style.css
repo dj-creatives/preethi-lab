@@ -85,6 +85,67 @@ section {
   color: #333;
 }
 
+
+
+/* ====== HOME SECTION WITH OWNER ====== */
+.home-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.owner-photo {
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.owner-photo img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #0275d8;
+  margin-bottom: 15px;
+}
+
+.owner-photo h3 {
+  font-family: "Playfair Display", serif;
+  color: #0275d8;
+  margin-bottom: 5px;
+}
+
+.owner-photo p {
+  color: #555;
+  font-style: italic;
+}
+
+.home-content {
+  flex: 3;
+  min-width: 300px;
+}
+
+/* Responsive layout */
+@media (max-width: 900px) {
+  .home-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .owner-photo {
+    margin-bottom: 20px;
+  }
+}
+
+
+
 /* ====== SLIDESHOW ====== */
 .slideshow-container {
   position: relative;
