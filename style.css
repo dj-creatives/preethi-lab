@@ -1,0 +1,234 @@
+/* ====== GENERAL RESET ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #222;
+  background: linear-gradient(135deg, #a2c2e1, #f6e6e4, #fcd4d4);
+  background-size: 400% 400%;
+  animation: gradientShift 12s ease infinite;
+  overflow-x: hidden;
+}
+
+/* Moving gradient animation */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ====== HEADER ====== */
+header {
+  font-family: "Playfair Display", serif;
+  font-size: 2em;
+  background: linear-gradient(to right, #0275d8, #4b79a1);
+  color: white;
+  text-align: center;
+  padding: 25px 0;
+  letter-spacing: 1.5px;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+}
+
+/* ====== NAVIGATION ====== */
+nav {
+  display: flex;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(6px);
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 15px 25px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background: rgba(255,255,255,0.2);
+  border-radius: 6px;
+  transform: scale(1.1);
+}
+
+/* ====== SECTIONS ====== */
+section {
+  padding: 50px 10%;
+  text-align: center;
+}
+
+/* ====== HOME SECTION ====== */
+#home {
+  background: rgba(255,255,255,0.85);
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+#home h2 {
+  color: #0275d8;
+  font-family: "Playfair Display", serif;
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+#home p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.05em;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* ====== SLIDESHOW ====== */
+.slideshow-container {
+  position: relative;
+  margin: 40px auto;
+  max-width: 800px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.slide {
+  display: none;
+}
+
+.slide img {
+  width: 100%;
+  border-radius: 10px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.fade {
+  animation: fade 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* Arrows */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  background: rgba(0,0,0,0.5);
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: background 0.3s;
+}
+.next { right: 10px; }
+.prev { left: 10px; }
+.prev:hover, .next:hover {
+  background: rgba(0,0,0,0.8);
+}
+
+/* Dots */
+.dot {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 4px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+.active, .dot:hover { background-color: #0275d8; }
+
+/* ====== PACKAGES ====== */
+#packages h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2em;
+  color: #004085;
+  margin-bottom: 25px;
+}
+
+.package-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.package {
+  background: rgba(255,255,255,0.9);
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.package:hover {
+  transform: translateY(-6px);
+}
+
+.package h3 {
+  color: #0275d8;
+  margin-bottom: 10px;
+}
+
+.package ul {
+  list-style: none;
+  text-align: left;
+  color: #444;
+}
+
+.package ul li {
+  padding: 5px 0;
+  border-bottom: 1px dotted #ccc;
+}
+
+.price {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #e83e8c;
+}
+
+/* ====== CONTACT ====== */
+#contact h2 {
+  font-family: "Playfair Display", serif;
+  color: #004085;
+}
+
+.contact-info {
+  background: rgba(255,255,255,0.9);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+iframe {
+  width: 100%;
+  height: 350px;
+  border: none;
+  border-radius: 10px;
+}
+
+/* ====== FOOTER ====== */
+footer {
+  background: #004085;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  font-size: 0.9em;
+  letter-spacing: 0.5px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  nav a { padding: 10px; font-size: 0.9em; }
+  .slide img { height: 250px; }
+}
